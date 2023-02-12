@@ -45,3 +45,6 @@ To uninstall the chart, run `make uninstall` which will remove the deployment fr
 To deploy a versioned production release, you must update the `values.yaml` file under `./helm/vars/production` with the version of your choice in the `image.tag` value. This repository uses a x.x.x versioning strategy (i.e: 1.0.0).
 
 After that value is changed, run `make IMAGE_TAG=<release-tag> release` to build and deploy your image to minikube.
+
+## Accessing the app
+Run `minikube service glia-app --url` to get an endpoint you can reach.
