@@ -1,5 +1,4 @@
 FROM mcr.microsoft.com/devcontainers/base:ubuntu-24.04
+FROM 507058141862.dkr.ecr.us-west-2.amazonaws.com/gitpod/devcontainer-base:1.0.0
 
-# use this Dockerfile to install additional tools you might need, e.g.
-# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-#     && apt-get -y install --no-install-recommends <your-package-list-here>
+RUN apt-get update
